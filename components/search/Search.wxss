@@ -1,0 +1,10 @@
+/* components/search/Search.wxss */
+input{
+    position: sticky;
+    margin: 10rpx;
+    background-color: #fff;
+    border: 2rpx solid black;
+    border-radius: 10rpx;
+    padding: 5rpx;
+    height: 30rpx;
+}

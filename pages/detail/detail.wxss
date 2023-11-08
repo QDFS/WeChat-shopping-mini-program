@@ -1,0 +1,76 @@
+/* pages/detail/detail.wxss */
+.top {
+    height: 400rpx;
+}
+
+.top image {
+    height: 400rpx;
+    width: 100%;
+}
+
+.centre {
+    display: flex;
+    text-align: center;
+    margin-top: 30rpx;
+}
+
+.centre view {
+    padding: 15rpx;
+    margin: 10rpx;
+    flex: 1;
+}
+
+.active {
+    border-bottom: 4rpx solid red;
+
+}
+
+.comments {
+    padding: 10rpx;
+    border-bottom: 2rpx solid black;
+}
+
+.user {
+    overflow: hidden;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.user image {
+    width: 100rpx;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20rpx;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.content {
+    margin: 20rpx 0;
+
+}
+
+.content image {
+    width: 200rpx;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: fixed;
+    bottom: 0rpx;
+}
+
+.bottom view {
+    color: white;
+    flex: 1;
+}

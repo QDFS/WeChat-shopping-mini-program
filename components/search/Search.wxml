@@ -1,0 +1,2 @@
+<!--components/search/Search.wxml-->
+ <input type="text" bindfocus="handlefocus" placeholder="请搜索" />

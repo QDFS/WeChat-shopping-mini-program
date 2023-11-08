@@ -1,0 +1,26 @@
+/* pages/category/category.wxss */
+page{
+    background-color: #FFFFFF;
+    height: 100%;
+}
+ 
+.vtabs-content-item {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+ 
+}
+.item{
+    height: 300rpx;
+    text-align: center; 
+    box-sizing: border-box;
+    padding: 20rpx;
+    width: 50%;
+    font-size: 12px;
+}
+
+.item  image{
+    width: 200rpx;
+}

@@ -1,0 +1,15 @@
+<!--pages/center/center.wxml-->
+<view class="userInfo">
+    <image src="{{userInfo.avatarUrl}}" bind:tap="handleChangeImg" />
+    <view>{{userInfo.nickName}}</view>
+</view>
+<mp-cells ext-class="my-cells"  >
+    <mp-cell value="个性设置">
+        <mp-icon slot="icon" icon="me" color="#46da68" size="{{25}}" ></mp-icon>
+        <mp-icon slot="footer"  icon="arrow" color="black" size="{{15}}" ></mp-icon>
+    </mp-cell>
+    <mp-cell value="完善信息"> 
+        <mp-icon slot="icon" icon="like" color="#46da68" size="{{25}}" ></mp-icon>
+        <mp-icon slot="footer"  icon="arrow" color="black" size="{{15}}" ></mp-icon>
+    </mp-cell>
+</mp-cells>

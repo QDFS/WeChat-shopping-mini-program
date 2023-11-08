@@ -1,0 +1,13 @@
+<!--pages/telform/telform.wxml-->
+<!--WXML示例代码-->
+<mp-form-page title="购物" subtitle="获取手机号">
+    <mp-cells title="表单" footer="底部说明文字底部说明文字">
+        <mp-cell prop="mobile" title="手机号" ext-class=" weui-cell_vcode">
+            <input bindinput="formInputChange" data-field="mobile" class="weui-input" placeholder="请输入手机号" />
+            <view slot="footer" class="weui-vcode-btn">获取验证码</view>
+        </mp-cell>
+    </mp-cells>
+    <view slot="button">
+        <button class="weui-btn" type="primary" bindtap="handleAjax">确定</button>
+    </view>
+</mp-form-page>

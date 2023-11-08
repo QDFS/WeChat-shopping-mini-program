@@ -1,0 +1,23 @@
+function computePrice(carMessage) {
+    var total = 0
+    for (var i = 0; i < carMessage.length; i++) {
+        if (carMessage[i].checked) {
+            total += carMessage[i].good.price * carMessage[i].number
+        }
+
+    }
+    return total
+}
+
+function isChecked(val){
+    return val.every(function(item){
+        return item.checked==true
+    })
+     
+      
+}
+
+module.exports = {
+    computePrice:computePrice,
+    isChecked:isChecked
+}

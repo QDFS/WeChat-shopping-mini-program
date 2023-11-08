@@ -1,0 +1,17 @@
+<!--pages/searchlist/searchlist.wxml-->
+<view class="goodsTop">
+    <view bind:tap="handlePrice">价格排序<mp-icon icon="refresh" type="field" color="black" size="{{25}}"></mp-icon>
+    </view>
+    <view bind:tap="handleComment">好评排序<mp-icon icon="refresh" type="field" color="black" size="{{25}}"></mp-icon>
+    </view>
+</view>
+<view class="box">
+    <view wx:for="{{goods}}" wx:key="id" class="goods" bind:tap="handleTap" data-id="{{item.id}}" data-title="{{item.title}}">
+        <image src="  http://localhost:5000{{item.poster}}" mode="widthFix" />
+        <view>
+            <view>{{item.title}}</view>
+            <view style="color: red;">￥{{item.price}}</view>
+            <view>好评率：{{item.goodcomment}}</view>
+        </view>
+    </view>
+</view>

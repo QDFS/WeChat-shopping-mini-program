@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots="true" autoplay="true" circular="true" style="height: 297rpx;">
+    <swiper-item wx:for="{{topSwiperList}}" wx:key="index">
+        <image src="http://localhost:5000{{item.url}}" mode="widthFix" style="width: 100vw;" />
+    </swiper-item>
+</swiper>
+
+ 
+<view style="width: 100vw; position: sticky; top: 5px;" >
+        <wyt-search bindevent="changeEvent"></wyt-search>
+</view>
+ 
+
+<view wx:for="{{goodsList}}" wx:key="index" class="goods" bind:tap="changePage"
+data-id="{{item.id}}" data-title="{{item.title}}">
+    <image src="http://localhost:5000{{item.poster}}" mode="widthFix" />
+    <view>
+    <view>{{item.title}}</view>
+    <view style="color: red;">￥ {{item.price}}</view>
+    <view>好评率：{{item.goodcomment}}</view>
+    </view>
+</view>

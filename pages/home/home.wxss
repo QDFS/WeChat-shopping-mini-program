@@ -1,0 +1,12 @@
+/* pages/home/home.wxss */
+
+.goods{
+    display: flex;
+    margin: 10rpx;
+}
+.goods image{
+  width: 200rpx;
+}
+.goods view{
+    margin: 10rpx;
+}
